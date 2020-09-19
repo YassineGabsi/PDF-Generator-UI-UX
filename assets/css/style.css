@@ -216,6 +216,13 @@ hr {
     min-height: 93vh;
 }
 
+@media screen and (max-width: 990px) {
+    .form-content  {
+        min-height: 50vh;
+    }
+}
+
+
 
 .titles-background {
     position: absolute;
