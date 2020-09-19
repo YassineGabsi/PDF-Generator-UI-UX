@@ -110,10 +110,13 @@ body {
 hr {
     border: none;
     height: 20px;
-    width: 90%;
-    border-bottom: 1px solid #1f1209;
-    box-shadow: 0 20px 20px -20px #333;
-    margin: -50px auto 10px;
+    box-shadow: 0 4px 5px darkgrey
+
+}
+@media screen and (min-width: 990px){
+    hr {
+        display: none;
+    }
 }
 
 .middle-content {
@@ -170,6 +173,12 @@ hr {
     }
 }
 
+.fixed-d {
+    position: fixed;
+    top: 0 !important;
+    background-color: white;
+
+}
 
 .certif-wrapper {
     background-color: white;
@@ -177,8 +186,6 @@ hr {
     box-shadow: 0 0 4px dimgrey;
     border: solid var(--blue-color) 4px;
     min-height: 90vh;
-    position: fixed;
-    top: 0 !important;
     z-index: 99;
     margin: 20px 20px 0 20px;
 }
@@ -189,6 +196,10 @@ hr {
         left: 0 !important;
         margin: 15px 40px 0 40px;
         padding: 0 130px 0 130px;
+    }
+    .fixed-d {
+        left: 0 !important;
+
     }
 }
 
