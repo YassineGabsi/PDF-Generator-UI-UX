@@ -161,9 +161,15 @@ hr {
 
 @media screen and (max-width: 500px) {
     .form-wrapper {
-        margin-top: 300px;
+        margin-top: 350px;
     }
 }
+@media screen and (max-width: 360px) {
+    .form-wrapper {
+        margin-top: 270px;
+    }
+}
+
 
 .certif-wrapper {
     background-color: white;
@@ -195,12 +201,12 @@ hr {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
     .certif-wrapper {
         min-height: 40vh;
         left: 0 !important;
         margin: 0 20px 0 20px;
-        padding: 0 10px 0 10px;
+        padding: 0;
     }
 }
 
@@ -397,7 +403,23 @@ input:focus:-ms-input-placeholder {
 .carousel-control-prev-icon {
     margin-left: -25px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231095bf' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+@media screen and (max-width: 768px ) {
+    .carousel-control-next-icon {
+        margin-right: -15px;
+    }
+    .carousel-control-prev-icon {
+        margin-left: -15px;
+    }
+}
 
+@media screen and (max-width: 450px ) {
+    .carousel-control-next-icon {
+        margin-right: 0;
+    }
+    .carousel-control-prev-icon {
+        margin-left: 0;
+    }
 }
 
 .carousel {
