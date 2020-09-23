@@ -19,35 +19,43 @@
             <div class="form-wrapper vivify popIn delay-150">
                 <div class="titles-background mx-auto text-center small-titles mt-2 col-12 ">
                     <div class="row text-center col-12 mt-2">
-                        <input id="tab-2" type="radio" name="tab" class="certif" onchange="triggerCheck()" checked>
-                        <label for="tab-2" class="tab mx-auto text-center vivify fadeIn delay-250">Certificate Content</label>
-                        <div class="white-line"></div>
-                        <input id="tab-1" type="radio" name="tab" class="email" onchange="triggerCheck()">
-                        <label for="tab-1" class="tab mx-auto text-center vivify fadeIn delay-250">Email</label>
+                        <div class="col-5">
+                            <label for="tab-2" class="tab mx-auto text-center vivify fadeIn delay-250">Certificate</label>
+                            <input id="tab-2" type="radio" name="tab" class="certif" onchange="triggerCheck()" checked>
+                        </div>
+                        <div class="col-2  d-flex justify-content-center">
+                            <div class="white-line"></div>
+                        </div>
+                        <div class="col-5">
+                            <input id="tab-1" type="radio" name="tab" class="email" onchange="triggerCheck()">
+                            <label for="tab-1" class="tab mx-auto text-center vivify fadeIn delay-250">Email</label>
+                        </div>
+
                     </div>
                 </div>
                 <div class="form-content">
                     <div class="certif-form vivify fadeIn delay-250" id="certif-form">
                         <!-- Certif content form -->
-                        <button class="button mx-auto d-flex text-size vivify pullUp delay-250" onclick="resetCertifForm()">Clear</button>
+<!--                        <button class="button mx-auto d-flex text-size vivify pullUp delay-250" onclick="resetCertifForm()">Clear</button>-->
                         <form id="certif-f" class="col-12">
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="title">Title:</label>
                             </div>
-                            <input class="input" type="text" id="title" placeholder="Title">
+                            <input onclick="document.getElementById('title').focus({ preventScroll: true })"
+                                   class="input" type="search" id="title" placeholder="Title">
 
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="heading">Heading:</label>
                             </div>
-                            <input class="input" type="text" id="heading" placeholder="Heading">
+                            <input class="input" type="search" id="heading" placeholder="Heading">
 
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="name">Name:</label>
                             </div>
-                            <input class="input" type="text" id="name" placeholder="Name">
+                            <input class="input" type="search" id="name" placeholder="Name">
 
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
@@ -60,7 +68,7 @@
                                         <div class="purple-square ml-2 mr-3 "></div>
                                         <label class="text-size blue-colored" for="left-hand">Left Handwriting:</label>
                                     </div>
-                                    <input class="input" type="text" id="left-hand" placeholder="Left Handwriting">
+                                    <input class="input" type="search" id="left-hand" placeholder="Left Handwriting">
                                 </div>
                                 <div class="col-6 input-wrapper right-one">
                                     <div class="row text-center mt-3">
@@ -68,7 +76,7 @@
                                         <label class="text-size blue-colored" for="right-hand">Right
                                             Handwriting:</label>
                                     </div>
-                                    <input class="input" type="text" id="right-hand" placeholder="Right Handwriting">
+                                    <input class="input" type="search" id="right-hand" placeholder="Right Handwriting">
                                 </div>
                             </div>
                             <div class="row col-12  col-6-wrapper">
@@ -77,14 +85,14 @@
                                         <div class="purple-square ml-2 mr-3 "></div>
                                         <label class="text-size blue-colored" for="left-subt">Left Subtitle:</label>
                                     </div>
-                                    <input class="input" type="text" id="left-subt" placeholder="Left Subtitle">
+                                    <input class="input" type="search" id="left-subt" placeholder="Left Subtitle">
                                 </div>
                                 <div class="col-6 input-wrapper right-one">
                                     <div class="row text-center mt-3">
                                         <div class="purple-square ml-2 mr-3 "></div>
                                         <label class="text-size blue-colored" for="right-subt">Right Subtitle:</label>
                                     </div>
-                                    <input class="input" type="text" id="right-subt" placeholder="Right Subtitle">
+                                    <input class="input" type="search" id="right-subt" placeholder="Right Subtitle">
                                 </div>
                             </div>
                             <div class="row col-12  col-6-wrapper">
@@ -93,32 +101,32 @@
                                         <div class="purple-square ml-2 mr-3 "></div>
                                         <label class="text-size blue-colored" for="left-desc">Left Subtitle:</label>
                                     </div>
-                                    <input class="input" type="text" id="left-desc" placeholder="Left Subtitle">
+                                    <input class="input" type="search" id="left-desc" placeholder="Left Subtitle">
                                 </div>
                                 <div class="col-6 input-wrapper right-one">
                                     <div class="row text-center mt-3">
                                         <div class="purple-square ml-2 mr-3 "></div>
                                         <label class="text-size blue-colored" for="right-desc">Right Subtitle:</label>
                                     </div>
-                                    <input class="input" type="text" id="right-desc" placeholder="Right Subtitle">
+                                    <input class="input" type="search" id="right-desc" placeholder="Right Subtitle">
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="email-form vivify fadeIn delay-250" id="email-form">
-                        <button class="button mx-auto d-flex text-size vivify pullUp delay-250" onclick="resetEmailForm()">Clear</button>
+<!--                        <button class="button mx-auto d-flex text-size vivify pullUp delay-250" onclick="resetEmailForm()">Clear</button>-->
                         <form id="email-f" class="col-12">
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="toemail">To Email:</label>
                             </div>
-                            <input class="input" type="text" id="toemail" placeholder="To Email">
+                            <input class="input" type="search" id="toemail" placeholder="To Email">
 
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="toname">To Name:</label>
                             </div>
-                            <input class="input" type="text" id="toname" placeholder="To Name">
+                            <input class="input" type="search" id="toname" placeholder="To Name">
 
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
@@ -130,13 +138,13 @@
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="fromname">From Name:</label>
                             </div>
-                            <input class="input" type="text" id="fromname" placeholder="From Name">
+                            <input class="input" type="search" id="fromname" placeholder="From Name">
 
                             <div class="row text-center mt-3">
                                 <div class="purple-square ml-5 mr-3 "></div>
                                 <label class="small-titles blue-colored" for="fromemail">From Email:</label>
                             </div>
-                            <input class="input" type="text" id="fromemail" placeholder="From Email">
+                            <input class="input" type="search" id="fromemail" placeholder="From Email">
                             <button class="button mx-auto d-flex text-size mt-4 vivify pullUp delay-250">Send</button>
 
                         </form>
@@ -148,7 +156,7 @@
         <div class="col-12 col-lg-7">
             <div class="fixed-d">
                 <div class="certif-wrapper  vivify popIn delay-150">
-                    <div id="carouselExampleControls" class="carousel slide vertical-center " data-interval="false">
+                    <div id="carouselExampleControls" class="carousel slide  " data-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class=" car-img d-block img-fluid w-100" src="assets/img/certif.PNG" alt="First slide">
@@ -160,21 +168,24 @@
                                 <img class=" car-img d-block img-fluid  w-100" src="assets/img/certif.PNG" alt="Third slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="row mx-auto justify-content-center mt-3">
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <div class="row d-flex justify-content-center">
+                                <button class="button  mx-3 text-size vivify pullUp delay-250" data-toggle="modal" data-target="#certificatesModal" >All Certificates</button>
+                            </div>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <button class="button mx-3  text-size vivify pullUp delay-250" onClick="document.location.reload(true)" >Refresh</button>
-                        <button class="button  mx-3 text-size vivify pullUp delay-250" data-toggle="modal" data-target="#certificatesModal" >All Certificates</button>
-                    </div>
+
                 </div>
-                <hr>
+<!--                <hr>-->
             </div>
         </div>
     </div>

@@ -21,12 +21,12 @@ function triggerCheck() {
     }
 }
 
-function resetEmailForm () {
-    document.getElementById("email-f").reset();
-}
-
-function resetCertifForm () {
-    document.getElementById("certif-f").reset();
-}
-
+// function resetEmailForm () {
+//     document.getElementById("email-f").reset();
+// }
+//
+// function resetCertifForm () {
+//     document.getElementById("certif-f").reset();
+// }
+//
 
